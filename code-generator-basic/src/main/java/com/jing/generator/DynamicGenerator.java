@@ -28,7 +28,7 @@ public class DynamicGenerator {
     public static void doGenerate(String inputPath,String outputPath,Object model) throws IOException, TemplateException {
         // new 出 configuration对象 ,参数为freemarker 版本号
         Configuration configuration = new Configuration(Configuration.VERSION_2_3_31);
-
+        System.out.println(inputPath);
         File templateDir = new File(inputPath).getParentFile();
         // 指定模板文件所在的路径
         configuration.setDirectoryForTemplateLoading(templateDir);
