@@ -8,7 +8,7 @@ public class MainTemplateConfig {
     /**
      * 是否生成循环
      */
-    private boolean loop;
+    private boolean loop ;
 
     /**
      * 作者注释

@@ -12,7 +12,7 @@ public class MainGenerator {
         // 整个项目根路径
         File parentFile = new File(projectPath).getParentFile();
         // 输入路径
-        String inputPath = new File(projectPath,"code-generator-demo-project/acm-template").getAbsolutePath();
+        String inputPath = new File(parentFile,"code-generator-demo-project/acm-template").getAbsolutePath();
         String outputPath = projectPath;
         // 生成静态文件
         StaticGenerator.copyFilesByRecursive(inputPath,outputPath);
