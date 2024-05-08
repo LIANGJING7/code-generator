@@ -5,8 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jing</groupId>
-    <artifactId>code-generator-basic</artifactId>
+    <artifactId>code-generator-maker</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 <dependencies>
     <dependency>
         <groupId>org.apache.maven.plugins</groupId>
@@ -59,7 +62,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.jing.Main</mainClass> <!-- 替换为你的主类的完整类名 -->
+                            <mainClass>com.jing.maker.Main</mainClass> <!-- 替换为你的主类的完整类名 -->
                         </manifest>
                     </archive>
                 </configuration>

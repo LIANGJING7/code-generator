@@ -1,4 +1,10 @@
 ### Custom Template
+# My Custom
+generated
+.idea
+.temp
+application-local.yml
+target
 ../../../.idea
 code-generator.iml
 ### Maven template

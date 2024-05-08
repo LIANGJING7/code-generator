@@ -4,9 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jing</groupId>
-    <artifactId>code-generator-basic</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>${basePackage}</groupId>
+    <artifactId>${name}</artifactId>
+    <version>${version}</version>
+    <properties>
+        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+    </properties>
 <dependencies>
     <dependency>
         <groupId>org.apache.maven.plugins</groupId>
@@ -59,7 +62,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.jing.Main</mainClass> <!-- 替换为你的主类的完整类名 -->
+                            <mainClass>${basePackage}.Main</mainClass> <!-- 替换为你的主类的完整类名 -->
                         </manifest>
                     </archive>
                 </configuration>
